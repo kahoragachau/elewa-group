@@ -94,15 +94,15 @@ export class ElewaNewsSectionComponent {
     },
   ]
 
-  // selectedTab: string
+  selectedTab: string
 
-  // constructor(){
-  //   this.selectedTab='all-news'
-  //   this.filterTopic();
-  // }
+  constructor(){
+    this.selectedTab='all-news'
+    this.filterTopic();
+  }
 
-  // filteredArticles: Article[]
-  // filterTopic(){
-  //   this.filteredArticles = this.article.filter(item => item.topic === this.selectedTab || this.selectedTab === 'all-news')
-  // }
+  filteredArticles: Article[]
+  filterTopic(){
+    this.filteredArticles = this.article.filter(item => item.topic === this.selectedTab || this.selectedTab === 'all-news')
+  }
 }
